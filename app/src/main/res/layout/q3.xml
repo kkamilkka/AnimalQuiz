@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pandas_im"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/panda"
+        android:scaleType="fitEnd"/>
+
+    <TextView
+        android:id="@+id/pandas_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="What do pandas almost exclusively feed on?" />
+
+
+    <EditText
+        android:id="@+id/pandas_tr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Your answer"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:layout_below="@id/pandas_txt"
+        android:inputType="textCapWords" />
+
+
+    <ImageButton
+        android:id="@+id/back_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pandas_tr"
+        android:background="@drawable/back"
+        android:onClick="backq3"/>
+
+    <ImageButton
+        android:id="@+id/next_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pandas_tr"
+        android:background="@drawable/next"
+        android:onClick="nextq3"/>
+
+</RelativeLayout>
